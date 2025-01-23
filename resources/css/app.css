@@ -1,0 +1,12 @@
+/* Import Bootstrap CSS if using Tailwind with Bootstrap */
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Custom CSS Rules */
+[x-cloak] {
+    display: none;
+}

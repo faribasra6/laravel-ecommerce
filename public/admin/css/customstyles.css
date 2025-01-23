@@ -1,0 +1,225 @@
+
+    /* Warning Row */
+    .warning-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px; /* Space below the row */
+        background: #fff3cd; /* Light yellow background for warning */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        animation: fadeIn 0.8s ease-out; /* Fade-in animation */
+    }
+
+    /* Warning Message */
+    .warning-message {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between icon and text */
+        margin-bottom: 15px; /* Space below the message */
+    }
+
+    .warning-text {
+        font-size: 18px;
+        font-weight: 600;
+        color: #856404; /* Dark yellow text color */
+    }
+
+    /* Low Stock Products List */
+    .low-stock-products ul {
+        list-style: none; /* Remove default list styling */
+        padding: 0;
+        margin: 0;
+    }
+
+    .low-stock-products li {
+        font-size: 16px;
+        color: #333; /* Dark text color */
+        margin-bottom: 5px; /* Space between list items */
+    }
+
+    .product-name {
+        font-weight: 500;
+    }
+
+    .product-quantity {
+        font-weight: 700;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+/* ===================================== */
+    /* Container for the row */
+    .revenue-shipping-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px; /* Space below the row */
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        animation: fadeIn 0.8s ease-out; /* Fade-in animation */
+    }
+
+    /* Style for each box (Revenue, Shipping, and Net Revenue) */
+    .revenue-box,
+    .shipping-box,
+    .net-revenue-box {
+        text-align: center;
+        padding: 20px;
+        flex: 1; /* Equal width for all boxes */
+        margin: 0 10px; /* Space between boxes */
+        background: white; /* White background for contrast */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    }
+
+    /* Hover effect for boxes */
+    .revenue-box:hover,
+    .shipping-box:hover,
+    .net-revenue-box:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    }
+
+    /* Label Style */
+    .label {
+        font-size: 18px; /* Slightly larger label */
+        font-weight: 600; /* Semi-bold */
+        color: #444; /* Dark gray text */
+        margin-bottom: 10px; /* Space between label and value */
+        text-transform: uppercase; /* Uppercase text */
+        letter-spacing: 1px; /* Slight letter spacing */
+    }
+
+    /* Value Style */
+    .value {
+        font-size: 32px; /* Match icon size */
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px; /* Space between value and icon */
+        color: #333; /* Dark text color */
+    }
+
+    /* Icon Style */
+    .value i {
+        font-size: 32px; /* Larger icon size */
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); /* Subtle shadow */
+        transition: transform 0.3s ease; /* Smooth transition */
+        animation: pulse 2s infinite; /* Pulse animation */
+    }
+
+    /* Hover effect for icons */
+    .value i:hover {
+        transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    }
+
+    /* Text Colors */
+    .text-success {
+        color: #28a745; /* Green for revenue */
+    }
+
+    .text-danger {
+        color: #dc3545; /* Red for shipping charges */
+    }
+
+    .text-primary {
+        color: #007bff; /* Blue for net revenue */
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+/*=================== Charts and other things of index file============*/
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bg-purple{
+  background-color: purple;
+} 
+/* Basic Styling for Chart Container */
+.chart-container {
+position: relative;
+width: 100%;
+height: 400px;  /* Fixed height for the chart */
+max-width: 100%;
+margin: 0 auto;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#salesChart {
+  width: 100% !important; /* Make the chart responsive */
+  height: 100% !important; /* Make the chart take up the full height of the container */
+}
+
+/* ------------ Add Category & Product------------ */
+
+.w-4 {
+    width: 1rem;
+  }
+  .h-4 {
+    height: 1rem;
+  }
+  
+  .w-6 {
+    width: 1.5rem;
+  }
+  .h-6 {
+    height: 1.5rem;
+  }
+  
+.dropby {
+    background: white !important;
+    border-radius: 5px !important;
+    border: 2px dashed rgb(0, 135, 247) !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered li{
+  color: #000;
+
+}
