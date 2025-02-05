@@ -85,8 +85,16 @@ Here are some screenshots of the project:
 - **Admin Panel:** Admin Panel for managing products, orders, and users.
 
 <!-- Add your screenshot images below -->
-![Home Page](path_to_home_page_screenshot.png)
-![Admin Panel](path_to_admin_panel_screenshot.png)
+
+
+<!-- Add your screenshot images below -->
+![Home Page](screens/1.png)
+![Admin Panel](screens/2.png)
+![Product Page](screens/3.png)
+![Cart Page](screens/4.png)
+![Checkout Page](screens/5.png)
+![Order Management](screens/6.png)
+
 
 ---
 ### Additional Commands
