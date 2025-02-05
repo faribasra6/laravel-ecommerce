@@ -34,7 +34,7 @@ class ProductImageController extends Controller
 
         // Use Intervention Image to process the large image
         $thumb = Image::read($image); // Create an image instance
-        $thumb->resize(1400, null, function ($constraint) {
+        $thumb->resize(1200, 800, function ($constraint) {
             $constraint->aspectRatio(); // Maintain aspect ratio for large image
         });
 

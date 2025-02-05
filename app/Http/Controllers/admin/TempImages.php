@@ -33,7 +33,7 @@ class TempImages extends Controller
             return response()->json([
                 'message' => 'Image uploaded successfully!',
                 'data' => $tempImage,
-                'image_path' => asset('storage/' . $tempImage->file_path),
+                'image_path' => url('storage/' . $tempImage->file_path),
             ], 201);
         }
 

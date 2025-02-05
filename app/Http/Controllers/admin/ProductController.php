@@ -204,7 +204,7 @@ class ProductController extends Controller
                 $image = Image::read($imagePath);
     
                 // Process and save the large image
-                $largeImage = $image->resize(1400, null, function ($constraint) {
+                $largeImage = $image->resize(1200, 800, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 });

@@ -76,7 +76,7 @@
                             <div class="col-md-3" id="image-row-{{ $image->id }}">
                                 <div class="card">
                                  
-                                    <img src="{{ asset('storage/' . $image->path) }}" class="card-img-top" alt="Product Image">
+                                    <img src="{{ url('storage/' . $image->path) }}" class="card-img-top" alt="Product Image">
                                     <div class="card-body">
                                         <a href="javascript:void(0)" onclick="deleteImage({{ $product->id }}, {{ $image->id }})" class="btn btn-danger">Delete</a>
                                     </div>
@@ -207,7 +207,7 @@
             </div> 
               
             <div class="pb-5 pt-3">
-                <input type="submit" name="Create" id="create" class="btn btn-primary" value="Create">
+                <input type="submit" name="Create" id="create" class="btn btn-primary" value="Update">
                 <a href="{{ route('products') }}" class="btn btn-outline-dark ml-3">Cancel</a>
             </div>
         </div>

@@ -74,13 +74,13 @@
                                 <div class="mb-3 row">
                                     <div class="col-lg-6">
                                         <label for="first_name">First Name</label>
-                                        <input type="text" name="first_name" id="first_name" class="form-control" value="{{ $address->first_name }}">
+                                        <input type="text" name="first_name" id="first_name" class="form-control" value="{{ $address->first_name ?? ''}}">
                                         <p id="error-first_name" class="error-message text-danger"></p>
                                     </div>
                                 
                                     <div class="col-lg-6">
                                         <label for="last_name">Last Name</label>
-                                        <input type="text" name="last_name" id="last_name" class="form-control" value="{{ $address->last_name }}">
+                                        <input type="text" name="last_name" id="last_name" class="form-control" value="{{ $address->last_name ?? '' }}">
                                         <p id="error-last_name" class="error-message text-danger"></p>
                                     </div>
                                 </div>
@@ -89,13 +89,13 @@
                                 <div class="mb-3 row">
                                     <div class="col-lg-6">
                                         <label for="email">Email</label>
-                                        <input type="email" name="email" id="email" class="form-control" value="{{ $address->email }}">
+                                        <input type="email" name="email" id="email" class="form-control" value="{{ $address->email ?? '' }}">
                                         <p id="error-email" class="error-message text-danger"></p>
                                     </div>
                                 
                                     <div class="col-lg-6">
                                         <label for="mobile">Mobile</label>
-                                        <input type="text" name="mobile" id="mobile" class="form-control" value="{{ $address->mobile }}">
+                                        <input type="text" name="mobile" id="mobile" class="form-control" value="{{ $address->mobile ?? '' }}">
                                         <p id="error-mobile" class="error-message text-danger"></p>
                                     </div>
                                 </div>
@@ -106,8 +106,8 @@
                                     <label for="country_id">Country</label>
                                     <select name="country_id" id="country_id" class="form-control">
                                         @foreach($countries as $country)
-                                            <option value="{{ $country->id }}" {{ $address->country_id == $country->id ? 'selected' : '' }}>
-                                                {{ $country->name }}
+                                            <option value="{{ $country->id ?? null }}" {{ ($address->country_id ?? null) == $country->id ? 'selected' : '' }}>
+                                                {{ $country->name ?? '' }}
                                             </option>
                                         @endforeach
                                     </select>
@@ -117,7 +117,7 @@
                                 <!-- Address -->
                                 <div class="mb-3">
                                     <label for="address">Address</label>
-                                    <textarea name="address" id="address" class="form-control" rows="3">{{ $address->address }}</textarea>
+                                    <textarea name="address" id="address" class="form-control" rows="3">{{ $address->address ?? '' }}</textarea>
                                     <p id="error-address" class="error-message text-danger"></p>
                                 </div>
                                 
@@ -125,13 +125,13 @@
                                 <div class="mb-3 row">
                                     <div class="col-lg-6">
                                         <label for="apartment">Apartment (Optional)</label>
-                                        <input type="text" name="apartment" id="apartment" class="form-control" value="{{ $address->apartment }}">
+                                        <input type="text" name="apartment" id="apartment" class="form-control" value="{{ $address->apartment ?? null }}">
                                         <p id="error-apartment" class="error-message text-danger"></p>
                                     </div>
                                 
                                     <div class="col-lg-6">
                                         <label for="city">City</label>
-                                        <input type="text" name="city" id="city" class="form-control" value="{{ $address->city }}">
+                                        <input type="text" name="city" id="city" class="form-control" value="{{ $address->city ?? null }}">
                                         <p id="error-city" class="error-message text-danger"></p>
                                     </div>
                                 </div>
@@ -140,13 +140,13 @@
                                 <div class="mb-3 row">
                                     <div class="col-lg-6">
                                         <label for="state">State (Optional)</label>
-                                        <input type="text" name="state" id="state" class="form-control" value="{{ $address->state }}">
+                                        <input type="text" name="state" id="state" class="form-control" value="{{ $address->state ?? null }}">
                                         <p id="error-state" class="error-message text-danger"></p>
                                     </div>
                                 
                                     <div class="col-lg-6">
                                         <label for="zip">Zip Code (Optional)</label>
-                                        <input type="text" name="zip" id="zip" class="form-control" value="{{ $address->zip }}">
+                                        <input type="text" name="zip" id="zip" class="form-control" value="{{ $address->zip ?? null }}">
                                         <p id="error-zip" class="error-message text-danger"></p>
                                     </div>
                                 </div>

@@ -78,7 +78,7 @@
     document.getElementById('phone').addEventListener('input', function () {
         const phoneInput = this.value;
         const phoneError = document.getElementById('phoneError');
-        const uaePhoneRegex = /^(05\d{7}|\+9715\d{7})$/; // Exact match for 05XXXXXXX or +9715XXXXXXX
+        const uaePhoneRegex = /^(05\d{8}|\+9715\d{8})$/; // Exact match for 05XXXXXXX or +9715XXXXXXX
 
         if (!uaePhoneRegex.test(phoneInput)) {
             phoneError.textContent = 'Please enter a valid UAE phone number (e.g., 05XXXXXXX or +9715XXXXXXX).';
