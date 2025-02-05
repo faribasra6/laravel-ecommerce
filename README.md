@@ -1,5 +1,5 @@
 # Laravel E-Commerce Store
-
+![Home Page](screens/1.png)
 A fully functional eCommerce platform built with Laravel, featuring product management, user authentication, shopping cart, and checkout functionality. This project is designed to provide a robust and scalable solution for online stores.
 
 ---
@@ -81,18 +81,18 @@ To make a user an admin, update the `usertype` column in the `users` table to `1
 
 Here are some screenshots of the project:
 
+
 - **Home Page:** Home Page showcasing featured products.
-- **Admin Panel:** Admin Panel for managing products, orders, and users.
 
-<!-- Add your screenshot images below -->
-
-
-<!-- Add your screenshot images below -->
 ![Home Page](screens/1.png)
+- **Admin Panel:** Admin Panel for managing products, orders, and users.
 ![Admin Panel](screens/2.png)
 ![Product Page](screens/3.png)
+- **Shop Page:** Shop Page showcasing all products.
 ![Cart Page](screens/4.png)
+- **User Profile Page:**
 ![Checkout Page](screens/5.png)
+- **Wishlist Page:**
 ![Order Management](screens/6.png)
 
 
